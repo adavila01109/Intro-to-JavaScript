@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<p id="myTag">Hello World!</p>
+<button id="myButton" onclick="myButtonHit();">My Button!</button>
+<p id="countPtag">The count is: 0</p>
+
+<script>
+
+var counter = 0;
+
+// Changes hello world to bye world 
+
+function myButtonHit()
+{
+	counter = counter + 1;
+	
+	if(document.getElementById('myTag').innerHTML == 'Hello World!')
+	{
+		document.getElementById('myTag').innerHTML = 'Bye World!';
+		
+	}else{
+		document.getElementById('myTag').innerHTML = 'Hello World!';
+		
+	}
+	document.getElementById('countPtag').innerHTML = 'The count is:' + counter;
+}
+
+</script>
+
+</body>
+</html>
